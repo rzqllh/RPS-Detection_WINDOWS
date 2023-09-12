@@ -1,80 +1,87 @@
+# Rock, Paper, Scissors Image Classifier
+
+
 <p align="center">
-  <img src="https://www.science.org/do/10.1126/science.aac4663/abs/sn-rockpaper.jpg" alt="Rock, Paper, Scissors Classifier" width="300">
+  <span>
+   <img src="https://www.science.org/do/10.1126/science.aac4663/abs/sn-rockpaper.jpg" alt="Rock, Paper, Scissors" height="300">
+    <br>
+  Image credit: Yiap See fat
+  </span>
 </p>
 
-# Rock, Paper, Scissors Classifier
-This repository contains a Python script that builds and trains a state-of-the-art convolutional neural network (CNN) to classify images of rock, paper, and scissors. The CNN is implemented using TensorFlow and Keras.
-
-___
+Welcome to the world of Rock, Paper, Scissors—reimagined through the lens of deep learning! This exciting project combines the nostalgia of a classic hand game with the cutting-edge power of artificial intelligence. Whether you're a machine learning enthusiast or simply a fan of the timeless Rock, Paper, Scissors, this project promises an engaging and interactive experience.
 
 ## Table of Contents
-- [Requirements](#requirements)
+
+- [Introduction](#introduction)
+- [About](#about)
+- [Getting Started](#getting-started)
+  - [Requirements](#requirements)
+  - [Installation](#installation)
 - [Usage](#usage)
-- [Dataset](#dataset)
-- [Model](#model)
-- [Evaluation](#evaluation)
-- [Prediction](#prediction)
+  - [Training the Model](#training-the-model)
+  - [Evaluating Model Performance](#evaluating-model-performance)
+- [Making Predictions](#making-predictions)
+- [Kaggle Dataset](#kaggle-dataset)
 - [Contributing](#contributing)
 - [License](#license)
 
-___
 
-## Requirements
-To run the script and train the model, you need to install the following Python packages:
+## Introduction
+Welcome to the world of Rock, Paper, Scissors—reimagined through the lens of deep learning! This exciting project combines the nostalgia of a classic hand game with the cutting-edge power of artificial intelligence. Whether you're a machine learning enthusiast or simply a fan of the timeless Rock, Paper, Scissors, this project promises an engaging and interactive experience.
+
+## About
+This project leverages the power of TensorFlow and Keras to train a convolutional neural network (CNN) that can classify images of rock, paper, and scissors hand signs. It's a fantastic way to delve into the world of deep learning while having fun with a popular game.
+
+## Getting Started
+### Requirements
+Before diving into the world of Rock, Paper, Scissors AI, make sure you have the following prerequisites installed:
+
 - [TensorFlow](https://www.tensorflow.org/)
-- [NumPy](https://numpy.org/)
+- [Numpy](https://numpy.org/)
 - [Matplotlib](https://matplotlib.org/)
-- [Requests](https://docs.python-requests.org/en/master/)
-- [scikit-learn](https://scikit-learn.org/stable/)
-  
-You can install these packages using the provided `requirements.txt` file. See the [Installation](#installation) section for details.
+- [Requests](https://pypi.org/project/requests/)
+- [Scikit-learn](https://scikit-learn.org/stable/)
 
-___
+You can easily install these dependencies by running:
 
-## Usage
-Follow the steps below to use this repository:
-
-### 1. Clone the Repository
-Clone this repository to your local machine using the following command:
-```bash
-git clone https://github.com/your-username/rock-paper-scissors.git
-```
-
-### 2. Install Requirements
-Navigate to the cloned repository and install the required Python packages using pip:
-```bash
+```shell
 pip install -r requirements.txt
 ```
-### 3. Download the Dataset
-The dataset used in this project can be downloaded from Kaggle. Once downloaded, place the dataset in the rockpaperscissors directory.
 
-### 4. Train the Model
-Run the script to train the CNN model:
-```python
-pyhton app-name.py
+### Installation
+Get started in three simple steps:
+1. Clone the repository:
+   ```shell
+   git clone https://github.com/yourusername/rock-paper-scissors-classifier.git
+   cd rock-paper-scissors-classifier
+   ```
+2. Organize and prepare your dataset by following the instructions in `main.py`.
+3. Train the model:
+   ```python
+   python main.py
+   ```
+
+## Usage
+### Training the Model
+Train your Rock, Paper, Scissors classifier by running `main.py`. This script will download the dataset, organize it into training and validation sets, and train a deep learning model for gesture recognition.
+```shell
+python main.py
 ```
-### 5. Evaluate the Model
-After training, the script will evaluate the model on the validation set and display the accuracy. You can also evaluate the model on the training set by uncommenting the relevant code in train_model.py.
+### Evaluating Model Performance
+After training, evaluate the model's performance on both the training and validation sets. This will help you gauge how well the AI can play Rock, Paper, Scissors.
 
-### 6. Make Predictions
-You can use the trained model to make predictions on new images by replacing 'path_to_image.jpg' with the path to your image file in the provided code.
+## Making Predictions
+To make predictions on new images, use the predict_image function provided in predict.py. Replace 'path_to_image.jpg' with the path to your image file.
+```shell
+python predict.py
+```
 
-___
+## Kaggle Dataset
+The dataset for this project was obtained from Kaggle. You can find the original dataset and additional resources on the [Kaggle Rock, Paper, Scissors Dataset](https://www.kaggle.com/drgfreeman/rockpaperscissors) page. The dataset includes a variety of hand gesture images, making it a great starting point for training your image classifier.
 
-### Dataset
-The dataset consists of thousands of high-quality images of rock, paper, and scissors. It has been preprocessed and organized into training and validation sets, with data augmentation applied during training to enhance model robustness.
+## Contributing
+We welcome contributions from the community. Whether it's improving the model, enhancing the documentation, or adding new features, your contributions can make this project even more exciting. Feel free to open issues and pull requests.
 
-### Model
-The CNN model is a deep neural network architecture that leverages convolutional layers, max-pooling layers, and fully connected layers. It has been meticulously fine-tuned to achieve outstanding performance in classifying images into one of three classes: rock, paper, or scissors.
-
-### Evaluation
-The model's performance is evaluated on both the training and validation sets, and the accuracy is displayed, showcasing its capability to achieve remarkable results.
-
-### Prediction
-Utilize the provided code to harness the power of this trained model for making predictions on new images. Replace 'path_to_image.jpg' with the path to your image file, and watch the model expertly predict the class (rock, paper, or scissors).
-
-### Contributing
-Contributions are welcome! Feel free to open issues, submit pull requests, or suggest enhancements. Let's collaborate to make this project even better.
-
-### License
+## License
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/rzqllh/RPS-Detection_WINDOWS/blob/main/LICENSE) file for details.
