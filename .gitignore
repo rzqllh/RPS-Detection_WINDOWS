@@ -1,0 +1,5 @@
+# Ignore the "rockpaperscissors" folder
+rockpaperscissors/
+
+# Ignore the "kaggle.json" file
+kaggle.json
